@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioProject Name="LPC21xx" BuildTool="15" Version="3.00" Author="YinHandong[Òüº®¶¬]" ProjectGUID="{CAE3AD83-D4C3-4cb8-AFB7-6CBBC445F5A2}">
+    <Configurations>
+        <Configuration Name="DebugRel" OP="0" XROM="0,0,0,0#0,0,0,0#0,0,0,0" XRAM="0,0,0,0#0,0,0,0#0,0,0,0" OldName="DebugRel" CLK="12.000000" Cross="0" IROM="1,0x00000000,0x00020000,1#0,0,0,0" IRAM="1,0x40000000,0x00004000,0#0,0,0,0" OldCPU="LPC2134" OPTDBG="1,-1,1,0,1,1,()" DEVICE="LPC2134" VENDOR="NXP (founded by Philips)" FAMINY="3" CPU="IRAM(0x40000000-0x40003FFF) IROM(0-0x1FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" RGF='LPC213X.H(&quot;Philips&quot;)' MONDL='SARM.DLL(&quot;-pLPC21xx&quot;) TARMP.DLL(&quot;-pLPC2134&quot;)' SIMDL='SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2134&quot;)' SIMCLK="12.000000">
+            <MDK_Output OutName="0,.\DebugRel\LPC21xx" OutType="1" OutBatch="0" OutHex="0" OutList="0,.\DebugRel" Debug="1" OutBig="0" />
+            <MDK_User BfC="0,()#0,()" BfB="0,()#0,()" AfB="0,()#0,()" Beep="1" SDebug="0" />
+            <MDK_CParam Def="" uDef="" Inc="" Misc="" Opt="0,0" Code="0,1,0,0,0,0" Language="0,0,0,0" List="0" />
+            <MDK_AsmParam Def="" uDef="" Inc="" Misc="" Code="1,0,0,0,0,0" Language="0" List="1,1" />
+            <MDK_Linker Misc="" UseDef="0" Code="0,0,0,1,()" Sct=".\sct\LPC21xx.sct" List="1,1,1,1,1,1,1,1,1" first="" />
+            <MDK_Debug DbgType="0" sfSIM="1,1,(),()" hwSIM="1,1,1,()" Drv="(),()" SrvOpt="" />
+            <DeviceProperties Item0='BOOK0=DATASHTS\PHILIPS\LPC2131_32_34_36_38.PDF(&quot;Data Sheet&quot;)' Item1="CPU=IRAM(0x40000000-0x40003FFF) IROM(0-0x1FFFF) CLOCK(12000000) CPUTYPE(ARM7TDMI)" Item2='FLASH=LPC210x_ISP.EXE (&quot;#H&quot; ^X $D COM1: 9600 1)' Item3="FLDLL=UL2ARM(-U40296420 -O7 -S0 -C0 -FO7 -FD40000000 -FC800 -FN1 -FF0LPC_IAP2_128 -FS00 -FL020000)" Item4='MON=SARM.DLL(&quot;-pLPC21xx&quot;) TARMP.DLL(&quot;-pLPC2134&quot;)' Item5='REGFILE=LPC213X.H(&quot;Philips&quot;)' Item6='SFILE=&quot;STARTUP\Philips\Startup.s&quot; (&quot;Philips LPC2100 Startup Code&quot;)' Item7='SIM=SARM.DLL(&quot;-cLPC2100&quot;)  DARMP.DLL(&quot;-pLPC2134&quot;)' />
+            <DeviceDescription Description="ARM7TDMI-S based high-performance 32-bit RISC Microcontroller with Thumb extensions&#x0D;&#x0A;128KB on-chip Flash ROM with In-System Programming (ISP) and In-&#x0D;&#x0A;Application Programming (IAP),  8-ch 10bit ADC&#x0D;&#x0A;16KB RAM, Vectored Interrupt Controller, &#x0D;&#x0A;Two UARTs, one with full modem interface.&#x0D;&#x0A;Two I2C serial interfaces, Two SPI serial interfaces&#x0D;&#x0A;Three 32-bit timers, Real Time Clock, Watchdog Timer,&#x0D;&#x0A;General purpose I/O pins.&#x0D;&#x0A;CPU clock up to 60 MHz, On-chip crystal oscillator and On-chip PLL" />
+        </Configuration>
+    </Configurations>
+    <Files>
+        <Filter Name="*.h">
+            <File RelativePath=".\src\LPC21xx.h" FileType="5" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\src\target.h" FileType="5" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\src\config.h" FileType="5" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="target">
+            <File RelativePath=".\src\target.c" FileType="1" Output="target0000.o" ro="0" bss="0" rw="0">
+                <Header RelativePath=".\src\config.h" />
+                <Header RelativePath=".\src\LPC21xx.h" />
+                <Header RelativePath=".\src\target.h" />
+            </File>
+            <File RelativePath=".\src\IRQ.s" FileType="2" Output="IRQ0001.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\src\Startup.s" FileType="2" Output="Startup0002.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="user">
+            <File RelativePath=".\src\main.c" FileType="1" Output="main0003.o" ro="0" bss="0" rw="0">
+                <Header RelativePath=".\src\config.h" />
+                <Header RelativePath=".\src\LPC21xx.h" />
+                <Header RelativePath=".\src\target.h" />
+            </File>
+        </Filter>
+    </Files>
+</TKStudioProject>

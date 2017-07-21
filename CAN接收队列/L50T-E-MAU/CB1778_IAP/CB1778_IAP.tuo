@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioOptions Version="3.00" Author="YinHandong[Òüº®¶¬]">
+    <Projects OPTPES="98,64,0,0,0,96,0,0,0,96,0,">
+        <Project ProjectGUID="{CAE3AD83-D4C3-4cb8-AFB7-6CBBC445F5A2}" Name="CB1778_IAP" ACTCFG="DebugRel">
+            <TARGOPT Name="DebugRel" OPTDF="0" />
+        </Project>
+    </Projects>
+</TKStudioOptions>
